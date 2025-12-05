@@ -1,0 +1,98 @@
+/* ==== APPOINTMENT FORM ==== */
+
+#apt-container {
+    max-width: 800px;
+    margin: 20px auto 40px auto;
+    text-align: left;
+}
+
+#booking-form {
+    width: 100%;
+}
+
+#booking-form fieldset {
+    margin-bottom: 20px;
+}
+
+#booking-form legend {
+    font-weight: bold;
+    color:#2F554A;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+#booking-form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #2F554A;
+}
+
+#other-style{
+    color: #2F554A;
+    font-weight: bold;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="tel"],
+#booking-form input[type="email"],
+#booking-form input[type="date"],
+#booking-form textarea {
+    border: 1px solid #3E6A5A;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #497c69;
+}
+
+#services-row {
+    margin: 8px 0 14px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#services-row label,
+#time-row label {
+    font-weight: normal;
+}
+
+#time-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 6px;
+}
+
+#form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#book-btn,
+#clear-btn {
+    padding: 8px 22px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#book-btn {
+    background-color: #3E6A5A;
+    color: #ffffff;
+}
+
+#clear-btn {
+    background-color: #d3ffef;
+    color: #2F554A;
+    border: 1px solid #3E6A5A;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Spa</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/appt.css">
+</head>
+
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">Serenity Spa</div>
+        <ul id="nav-link"> 
+            <li><a href="index.html">Homepage</a></li> 
+            <li id="services"><a href="services.html">Services</a>
+                <ul id="dropdown">
+                    <li><a href="service1.html">Service 1</a></li>
+                    <li><a href="service2.html">Service 2</a></li>
+                    <li><a href="service3.html">Service 3</a></li>
+                </ul></li>
+
+            <li><a href="appointment.html">Appointment</a></li> 
+            <li><a href="sitemap.html">Site Map</a></li> 
+        </ul>
+    </nav>
+    
+    <div id="container">
+    <header>
+        <img id="banner" src="Assets/banner.png" alt="Serenity Spa Banner">
+        
+    </header>
+
+    <main>
+        <br><h2>Client Booking Form</h2>
+    <p>* Required Fields</p>
+
+    <div id="apt-container">
+        <form method="get" action="confirm.html" id="booking-form">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-row">
+                    <label for="name">*Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Smith" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">*Telephone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">*Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Services & Time</legend>
+
+                <p id="other-style">Select services needed (you may choose more than one):</p>
+                <div id="services-row">
+                    <label><input type="checkbox" name="service" value="Relaxation Massage"> Relaxation Massage</label>
+                    <label><input type="checkbox" name="service" value="Rejuvenating Facial"> Rejuvenating Facial</label>
+                    <label><input type="checkbox" name="service" value="Aromatherapy Sauna"> Aromatherapy Sauna</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="date">*Date for appointment:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <label for="date">*Time for appointment:</label>
+                <div id="time-row">
+                    <label><input type="radio" name="btime" value="9AM" required> 9:00 AM</label>
+                    <label><input type="radio" name="btime" value="11AM"> 11:00 AM</label>
+                    <label><input type="radio" name="btime" value="1PM"> 1:00 PM</label>
+                    <label><input type="radio" name="btime" value="3PM"> 3:00 PM</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Requests</legend>
+
+                <div class="form-row">
+                    <label for="requests">Additional requests:</label>
+                    <textarea id="requests" name="requests" placeholder="Medical conditions, preferences, availability..." rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <div id="form-buttons">
+                <button type="submit" id="book-btn">Book Appointment</button>
+                <button type="reset" id="clear-btn">Clear Form</button>
+            </div>
+
+        </form>
+    </div>
+    </main>
+    </div>
+    
+        <footer>
+        <p>
+            Copyright &copy; 2025 Serenity Spa<br>
+            Mohammad Yameen
+        </p>
+        </footer>
+
+    
+</body>
+</html>

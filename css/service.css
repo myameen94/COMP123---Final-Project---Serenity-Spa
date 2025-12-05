@@ -1,0 +1,95 @@
+/* ======================
+   SERVICES LIST CARDS
+====================== */
+
+/* Layout for all three service sections on the main Services page */
+#service1-layout,
+#service2-layout,
+#service3-layout {
+    display: flex;
+    flex-wrap: nowrap;         /* keep side-by-side on large screens */
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+/* Image + text columns: 50% / 50% */
+#service1-image,
+#service2-image,
+#service3-image,
+#service1-text,
+#service2-text,
+#service3-text {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+/* Image styling */
+#service1-image img,
+#service2-image img,
+#service3-image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3E6A5A;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Text styling */
+#service1-text,
+#service2-text,
+#service3-text {
+    text-align: left;
+}
+
+/* Middle card: image on the right, text on the left */
+#service2-layout {
+    flex-direction: row-reverse;
+}
+
+/* ========= MORE INFO BUTTON ========= */
+
+#more-info-btn {
+    display: inline-block;
+    background-color: #3E6A5A;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+#more-info-btn:hover {
+    background-color: #2F554A;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Smartphone stacking for services list */
+@media (max-width: 600px) {
+    #service1-layout,
+    #service2-layout,
+    #service3-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #service1-image,
+    #service2-image,
+    #service3-image,
+    #service1-text,
+    #service2-text,
+    #service3-text {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    #service1-text,
+    #service2-text,
+    #service3-text {
+        text-align: left;
+        width: 100%;
+    }
+}

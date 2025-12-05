@@ -1,0 +1,77 @@
+/* ===========================
+   UNIVERSAL SERVICE PAGE LAYOUT
+   (Used for service1, service2, service3)
+=========================== */
+
+/* Top description text */
+#service-description {
+    text-align: left;
+    padding: 15px;
+}
+
+/* Desktop layout: Left content (lists) + Right column (image) */
+#service-layout {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#service-left {
+    flex: 1 1 50%;
+}
+
+#service-image {
+    flex: 1 1 50%;
+}
+
+/* Image styling */
+#service-image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3E6A5A;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+/* Lists for treatments + benefits */
+#treatments-list,
+#benefits-list {
+    text-align: left;
+    padding-left: 20px;
+    list-style: disc;  /* override global none */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ====== SMARTPHONE STACKING ORDER (≤ 600px) ====== */
+
+@media (max-width: 600px) {
+
+    /* Stack everything vertically */
+    #service-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Description is already above this container in HTML */
+
+    /* Image appears first in the stacked layout */
+    #service-image {
+        order: 1;
+        width: 100%;
+    }
+
+    /* Treatments + benefits appear after the image */
+    #service-left {
+        order: 2;
+        width: 100%;
+    }
+
+    #treatments-list,
+    #benefits-list {
+        text-align: left;
+        width: 100%;
+    }
+}
