@@ -61,12 +61,6 @@
     transition: 0.3s ease;
 }
 
-#more-info-btn:hover {
-    background-color: #2F554A;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 /* Smartphone stacking for services list */
 @media (max-width: 600px) {
     #service1-layout,
